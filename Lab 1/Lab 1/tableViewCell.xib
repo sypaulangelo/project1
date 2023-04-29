@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTemplate" rowHeight="51" id="hTo-TW-g4d" customClass="tableViewCell" customModule="Lab_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hTo-TW-g4d" id="Hlt-Kc-hhQ">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="61o-4o-qvh">
+                        <rect key="frame" x="10" y="0.0" width="41.333333333333336" height="51"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9sh-ff-AuU">
+                                <rect key="frame" x="20.666666666666668" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="4HL-5e-cRd"/>
+                                    <constraint firstAttribute="width" id="E1e-hr-a4P"/>
+                                    <constraint firstAttribute="height" id="bPG-Sh-AnA"/>
+                                    <constraint firstAttribute="width" id="gLe-Gh-ujp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz4-Eb-LAQ">
+                                <rect key="frame" x="0.0" y="10" width="41.333333333333336" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="61o-4o-qvh" secondAttribute="bottom" id="ggl-Le-CIo"/>
+                    <constraint firstItem="61o-4o-qvh" firstAttribute="leading" secondItem="Hlt-Kc-hhQ" secondAttribute="leading" constant="10" id="sPO-Fs-Uuc"/>
+                    <constraint firstItem="61o-4o-qvh" firstAttribute="top" secondItem="Hlt-Kc-hhQ" secondAttribute="top" id="t2r-C2-aH3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImage" destination="9sh-ff-AuU" id="cwX-PH-RiH"/>
+                <outlet property="cellLabel" destination="Vz4-Eb-LAQ" id="Ic6-Qj-NEK"/>
+                <outlet property="cellStack" destination="61o-4o-qvh" id="bi7-FH-YWd"/>
+            </connections>
+            <point key="canvasLocation" x="55.725190839694655" y="-226.40845070422537"/>
+        </tableViewCell>
+    </objects>
+</document>
